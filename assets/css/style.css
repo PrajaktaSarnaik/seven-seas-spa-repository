@@ -1,0 +1,39 @@
+        .navbar-custom {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link.active {
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+            background-size: cover;
+            color: #FFEBD4;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-family: 'Handlee', cursive;
+        }
+
+        .btn {
+            color: #3B2F2F;
+        }
+
+        h2 {
+            font-family: 'Handlee', cursive;
+        }
+
+        #testimonialCarousel {
+            margin-top: 50px;
+        }
+
+        .bg-coffee {
+            background-color: #6F4E37;
+        }
+    
