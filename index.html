@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <title>Seven Seas Spa</title>
     <style>
         .navbar-custom {
@@ -20,10 +22,27 @@
             font-weight: bold;
         }
 
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            color: #FFEBD4;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-family: 'Handlee', cursive;
+        }
+
+        .btn {
+            color: #3B2F2F;
+        }
+
+        h2 {
+            font-family: 'Handlee', cursive;
+        }
+
+        #testimonialCarousel {
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -59,6 +78,97 @@
         </div>
     </nav>
 
+    <div class="container-fluid hero-section text-center">
+        <h1 class="display-4">Welcome to Seven Seas Spa</h1>
+        <p class="lead">We are dedicated to improving your overall wellbeing.</p>
+        <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+  
+    <div class="container my-5">
+        <h2 class="text-left">Our Services</h2>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/yoga.jpeg" class="card-img-top" alt="Yoga Classes">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Classes</h5>
+                        <p class="card-text">Join our yoga classes to improve your flexibility and mental clarity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/nutrition.png" class="card-img-top" alt="Nutritional Advice">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutritional Advice</h5>
+                        <p class="card-text">Get personalized nutritional advice to enhance your health and wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/mental-health.jpeg" class="card-img-top" alt="Mental Health Support">
+                    <div class="card-body">
+                        <h5 class="card-title">Mental Health Support</h5>
+                        <p class="card-text">Access our mental health support services for a balanced mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/wellness-program.jpeg" class="card-img-top" alt="Wellness Programs">
+                    <div class="card-body">
+                        <h5 class="card-title">Wellness Programs</h5>
+                        <p class="card-text">Participate in our wellness programs to rejuvenate your body and soul.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container my-5">
+        <h2 class="text-left">Wellness Tips</h2>
+        <p>Maintaining a healthy lifestyle is essential for overall wellbeing. Here are some tips to help you stay on track:</p>
+        <ul>
+            <li><strong>Stay Hydrated:</strong> Drink at least 8 glasses of water a day to keep your body hydrated and functioning properly.</li>
+            <li><strong>Get Enough Sleep:</strong> Aim for 7-8 hours of sleep each night to allow your body to rest and recover.</li>
+            <li><strong>Exercise Regularly:</strong> Engage in at least 30 minutes of physical activity daily to maintain your physical and mental health.</li>
+            <li><strong>Eat a Balanced Diet:</strong> Include a variety of fruits, vegetables, lean proteins, and whole grains in your diet to ensure you get all the necessary nutrients.</li>
+            <li><strong>Practice Mindfulness:</strong> Take time each day to practice mindfulness or meditation to reduce stress and improve your mental clarity.</li>
+        </ul>
+    </div>
+    <div class="container my-5"></div>
+        <h2 class="text-left">Testimonials</h2>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <img src="assets/images/testimonial.jpeg" class="rounded-circle mb-3" alt="Client 1" width="100" height="100">
+                <p class="card-text lead">"The best spa experience I've ever had! Highly recommend."</p>
+                <h5>- Client 1</h5>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="assets/images/testimonial2.jpg" class="rounded-circle mb-3" alt="Client 2" width="100" height="100">
+                <p class="card-text lead">"Amazing services and very professional staff."</p>
+                <h5>- Client 2</h5>
+            </div>
+            <div class="carousel-item text-center">
+                <img src="assets/images/testimonial3.jpg" class="rounded-circle mb-3" alt="Client 3" width="100" height="100">
+                <p class="card-text lead">"A wonderful place to relax and rejuvenate."</p>
+                <h5>- Client 3</h5>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
